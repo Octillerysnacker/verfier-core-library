@@ -10,12 +10,7 @@ public class SimplifiedCompiler_CompileToDirShould{
 
     @Test
     public void PassCorrectParameters(){
-        var manager = new MockStandardJavaFileManager();
-        var mockCompiler = new MockJavaCompiler();
-        var simplifiedCompiler = new SimplifiedCompiler();
-        StandardJavaFileManager m = null;
-        m.getJavaFileObjectsFromPaths(Paths.get("first", "ore"));
-        manager.get
+        
 
     }
 }
