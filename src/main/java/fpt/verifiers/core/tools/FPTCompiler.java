@@ -1,4 +1,4 @@
-package fpt.verifiers.core;
+package fpt.verifiers.core.tools;
 
 public class FPTCompiler {
     

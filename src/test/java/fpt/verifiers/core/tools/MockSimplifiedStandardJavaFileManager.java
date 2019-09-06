@@ -1,4 +1,4 @@
-package fpt.verifiers.core;
+package fpt.verifiers.core.tools;
 
 import java.nio.file.Path;
 
