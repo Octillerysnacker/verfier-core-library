@@ -1,7 +1,8 @@
 package fpt.verifiers.core.tools;
 
-import java.nio.file.Path;
+import javax.tools.DiagnosticListener;
+import javax.tools.JavaFileObject;
 
 public interface ISimplifiedCompiler {
-    void compileToDir(Path srcDir, Path outDir);
+    ISimplifiedStandardJavaFileManager getSimplifiedStandardJavaFileManager(DiagnosticListener<? super JavaFileObject> diagnosticListener);
 }
