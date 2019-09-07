@@ -11,7 +11,7 @@ public class DefaultJavaFileFinder implements IJavaFileFinder {
         try(var stream = Files.walk(srcDirectory)){
             return stream
             .filter(Files::isRegularFile)
-            .filter(file -> file.endsWith(".java"))
+            .filter(file -> file.toString().endsWith(".java"))
             .toArray(Path[]::new);
         }
     }
