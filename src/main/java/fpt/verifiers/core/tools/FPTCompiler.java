@@ -31,4 +31,9 @@ public class FPTCompiler implements IFPTCompiler{
         }
     }
 
+    @Override
+    public DiagnosticListener<? super JavaFileObject> getDiagnostics() {
+        return listener;
+    }
+
 }
