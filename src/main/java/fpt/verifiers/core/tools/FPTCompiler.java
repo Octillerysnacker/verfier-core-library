@@ -9,7 +9,7 @@ import javax.tools.JavaFileObject;
 
 import fpt.verifiers.core.io.IJavaFileFinder;
 
-public class FPTCompiler {
+public class FPTCompiler implements IFPTCompiler{
 
     private ISimplifiedCompiler simplifiedCompiler;
     private DiagnosticListener<? super JavaFileObject> listener;
