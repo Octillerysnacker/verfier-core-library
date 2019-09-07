@@ -52,7 +52,7 @@ public class MockSimplifiedCompiler implements ISimplifiedCompiler {
             DiagnosticListener<? super JavaFileObject> diagnosticListener, Iterable<String> options,
             Iterable<? extends JavaFileObject> compilationUnits) {
         getTask_manager = fileManager;
-        getManager_listener = diagnosticListener;
+        getTask_listener = diagnosticListener;
         getTask_options = options;
         getTask_units = compilationUnits;
         return task;

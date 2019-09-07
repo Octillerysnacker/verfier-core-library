@@ -12,6 +12,7 @@ public class MockSimplifiedCompilationTask implements ISimplifiedCompilationTask
     }
     @Override
     public Boolean call() {
+        _hasBeenCalled = true;
         return callResult;
     }
 
