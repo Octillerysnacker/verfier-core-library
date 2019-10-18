@@ -1,10 +1,10 @@
 package fpt.verifiers.core;
 
 public class FileLocation {
-    public final int Line;
-    public final int Position;
+    public final long Line;
+    public final long Position;
 
-    public FileLocation(int line, int position) {
+    public FileLocation(long line, long position) {
         Line = line;
         Position = position;
     }
