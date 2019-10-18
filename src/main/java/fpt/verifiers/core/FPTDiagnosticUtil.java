@@ -6,7 +6,7 @@ import javax.tools.DiagnosticCollector;
 import javax.tools.JavaFileObject;
 
 public class FPTDiagnosticUtil{
-    public static FPTDiagnostic[] fromDiagnosticCollector(DiagnosticCollector<? extends JavaFileObject> collector){
+    public static FPTDiagnostic[] fromDiagnosticCollector(DiagnosticCollector<? super JavaFileObject> collector){
         return collector.getDiagnostics().stream().map(FPTDiagnosticUtil::fromDiagnostic).toArray(FPTDiagnostic[]::new);
     }
     public static FPTDiagnostic.DiagnosticKind fromJavaDiagnosticKind(Kind kind){
@@ -18,7 +18,7 @@ public class FPTDiagnosticUtil{
             return FPTDiagnostic.DiagnosticKind.Info;
         }
     }
-    public static FPTDiagnostic fromDiagnostic(Diagnostic<? extends JavaFileObject> diagnostic){
+    public static FPTDiagnostic fromDiagnostic(Diagnostic<? extends Object> diagnostic){
             return new FPTDiagnostic(
                 diagnostic.getMessage(null), 
                 fromJavaDiagnosticKind(diagnostic.getKind()), 
