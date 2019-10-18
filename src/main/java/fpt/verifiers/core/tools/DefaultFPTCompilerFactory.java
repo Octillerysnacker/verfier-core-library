@@ -7,7 +7,7 @@ import javax.tools.ToolProvider;
 import fpt.verifiers.core.io.DefaultJavaFileFinder;
 
 public class DefaultFPTCompilerFactory implements IFPTCompilerFactory {
-    private static DiagnosticCollector<? super JavaFileObject> collector;
+    private DiagnosticCollector<? super JavaFileObject> collector;
     public DiagnosticCollector<? super JavaFileObject> getDefaultDiagnosticCollector(){
         return collector;
     }
